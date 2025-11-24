@@ -9,7 +9,7 @@ AI-powered development tools that get smarter with every use. Make each unit of 
 | Agents | 24 |
 | Commands | 15 |
 | Skills | 11 |
-| MCP Servers | 1 |
+| MCP Servers | 2 |
 
 ## Agents
 
@@ -136,14 +136,25 @@ Access via `/workflows:command`:
 | Server | Description |
 |--------|-------------|
 | `playwright` | Browser automation via `@playwright/mcp` |
+| `context7` | Framework documentation lookup via Context7 |
 
-**Playwright tools provided:**
+### Playwright
+
+**Tools provided:**
 - `browser_navigate` - Navigate to URLs
 - `browser_take_screenshot` - Take screenshots
 - `browser_click` - Click elements
 - `browser_fill_form` - Fill form fields
 - `browser_snapshot` - Get accessibility snapshot
 - `browser_evaluate` - Execute JavaScript
+
+### Context7
+
+**Tools provided:**
+- `resolve-library-id` - Find library ID for a framework/package
+- `get-library-docs` - Get documentation for a specific library
+
+Supports 100+ frameworks including Rails, React, Next.js, Vue, Django, Laravel, and more.
 
 MCP servers start automatically when the plugin is enabled.
 
